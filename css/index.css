@@ -19,4 +19,18 @@ body {
 
 #cartoon-network-characters {
     margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#all-char {
+    height: 500px;
+    width: 400px;
+    background-color: white;
+}
+
+#char-image {
+    height: 200px;
+    width: 200px;
+    background-color: white;
 }
