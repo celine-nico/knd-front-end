@@ -18,7 +18,7 @@ class API {
 
         btn.dataset.id = show.id
         btn.id = show.id
-        btn.innerHTML = `${show.show_name}`
+        btn.innerHTML = `${show.show_name} <br>`
         select.append(btn)
 
         let url = `http://127.0.0.1:3000/shows/${btn.dataset.id}/characters`

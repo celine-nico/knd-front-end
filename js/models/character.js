@@ -31,17 +31,14 @@ class Character{
     charLikes(e, id) {
         // debugger
         let likes = parseInt(e.target.parentElement.parentElement.querySelector(".character-like").innerText)
-        const charID = e.target.parentElement.parentElement.id
+        // const charID = e.target.parentElement.parentElement.id
 
         if (e.target.className == "cartoon-like-btn") {
             let likesNew = likes + 1
             e.target.parentElement.parentElement.querySelector(".character-like").innerText = likesNew
 
-            const charObj = {
-                likes: likesNew
-            }
 
-            const link = `http://127.0.0.1:3000/characters/${charID}`
+            const link = `http://127.0.0.1:3000/characters/${id}`
 
             fetch (link, {
                 method: 'PATCH',
@@ -52,8 +49,10 @@ class Character{
                 body: JSON.stringify({
                     likes: likesNew
                 })
-                
             })
+            .then(response => response.json())
+            .then(console.log)
+                
             
         }
     }

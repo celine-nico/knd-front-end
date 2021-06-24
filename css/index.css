@@ -1,6 +1,24 @@
 body {
     margin: 0;
     font-family: monospace;
+    background-color: rgb(3, 0, 8);
+}
+
+button{
+    border: 0;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    padding: 14px;
+    width: 200px;
+    margin: 10px;
+    color: #f7f2f5;
+    background-color: #d11d62;
+    border-radius: 8px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: box-shadow 200ms ease-out;
 }
   
 #cartoon-header {
@@ -26,11 +44,14 @@ body {
 #all-char {
     height: 500px;
     width: 400px;
-    background-color: white;
+    text-align: center;
+    color: #f7f2f5;
+    background-color: rgb(3, 0, 8);
 }
 
 #char-image {
     height: 200px;
     width: 200px;
-    background-color: white;
+    background-color: rgb(247, 252, 251);
 }
+
